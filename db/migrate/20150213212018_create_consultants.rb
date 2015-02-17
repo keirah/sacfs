@@ -1,7 +1,7 @@
 class CreateConsultants < ActiveRecord::Migration
   def change
     create_table :consultants do |t|
-      t.string :type
+      t.string :discipline
       t.string :title
       t.string :firstname
       t.string :surname
