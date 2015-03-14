@@ -21,6 +21,7 @@ class ConsultantsController < ApplicationController
   def edit
   end
 
+
   # POST /consultants
   # POST /consultants.json
   def create
@@ -64,7 +65,7 @@ class ConsultantsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_consultant
-      @consultant = Consultant.find(params[:id])
+      @consultant = Consultant.find(params[:id]) 
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
